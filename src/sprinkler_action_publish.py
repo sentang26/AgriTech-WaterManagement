@@ -58,7 +58,3 @@ if __name__ == '__main__':
     # SOil sensor device Objects
     sprinkler_sensor_ON = AWS("sprinkler_sensor_ON", "thing_1_certificate_filename", "thing_1_private_key_filename", "ON")
     soil_sensor_OFF = AWS("sprinkler_sensor_OFF", "thing_2_certificate_filename", "thing_2_private_key_filename", "OFF")
-
-
-    for sensor in (soil_sensor_1, soil_sensor_2, soil_sensor_3):
-        sensor.publish()
